@@ -67,12 +67,6 @@ void deliveryadd_record() {
 	cout << "Enter the Stock ID: ";
 	cin >> delivery.stock_id;
 
-
-
-
-
-
-
 	// Check if the Stock ID is valid
 	if (!isValidStockId(delivery.stock_id)) {
 		cout << "Invalid Stock ID. Please add the corresponding stock details first.\n";
@@ -135,12 +129,6 @@ void deliverysearch_record() {
 		}
 	}
 
-
-
-
-
-
-
 	catch (const exception& e) {
 		cout << e.what() << endl;
 	}
@@ -201,13 +189,6 @@ bool isValidStockId(int stockId) {
 }
 bool isValidNDC(int ndc) {
 	ifstream fin("medicinereport.txt");
-
-
-
-
-
-
-
 
 	try {
 		if (!fin.is_open()) {
